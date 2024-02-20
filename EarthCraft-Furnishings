@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthCraft Furnishings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <!-- Titre de la marque encadré -->
+        <div class="brand-container">
+            <h1 class="title">EarthCraft Furnishings</h1>
+            <img src="https://i.imgur.com/JGJxkzV.png" id="image1" alt="image">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#produits">Produits</a>
+                <div class="dropdown-content">
+                    <a href="#">Nouveautés</a>
+                    <a href="#">Promotions</a>
+                    <a href="#">Tous les meubles</a>
+                    <a href="#">Meubles de chambre</a>
+                    <a href="#">Meubles de salon</a>
+                    <a href="#">Meubles de cuisine</a>
+                </div>
+            </li>
+            <li><a href="#a-propos">À Propos</a></li><li><a href="#trouver-magasin">Trouver un magasin</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Contenu des onglets -->
+    <div id="accueil" class="tab">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur notre site dédié aux meubles en bois durable. Nous sommes engagés à fournir des meubles de haute qualité tout en préservant l'environnement.</p>
+    </div>
+
+    <div id="produits" class="tab">
+        <h2>Produits</h2>
+        <p>Découvrez notre gamme de meubles en bois durables, fabriqués avec soin à partir de matériaux respectueux de l'environnement.</p>
+    </div>
+
+    <div id="a-propos" class="tab">
+        <h2>À Propos</h2>
+        <p>Nous sommes EarthCraft Furnishings, une entreprise passionnée par la création de meubles durables et respectueux de l'environnement. Notre objectif est de fournir des meubles de haute qualité tout en préservant les ressources naturelles.</p>
+        <p><b>Engagement envers la durabilité</b></p>
+        <p>Earthcraft Furnishings est fermement engagée envers la durabilité et la responsabilité environnementale. Depuis nos débuts, nous avons intégré ces valeurs dans toutes nos opérations, en privilégiant l'utilisation de bois écoresponsable pour la fabrication de nos meubles.</p>
+        <p>Notre engagement envers la durabilité se reflète dans nos processus de conception, de production et de distribution, où nous mettons en œuvre des pratiques respectueuses de l'environnement et de la conservation des ressources naturelles. Malgré les défis réglementaires à venir, nous restons déterminés à maintenir ces normes élevées et à continuer à promouvoir des pratiques durables dans toute notre chaîne de valeur.</p>
+        <p><b>Certification et traçabilité</b></p>
+        <p>Nous sommes fiers de détenir des certifications reconnues en matière de gestion forestière durable, garantissant que le bois utilisé dans la fabrication de nos meubles provient de sources responsables et gérées de manière durable.</p>
+        <p>De plus, notre engagement envers la traçabilité des matériaux nous permet de suivre chaque étape de notre chaîne d'approvisionnement, depuis la forêt jusqu'au produit final. Ces certifications et pratiques de traçabilité assurent à nos partenaires que nos produits respectent les normes les plus strictes en matière de durabilité et de gestion responsable des ressources naturelles.</p>
+        <p><b>Diversification des sources d'approvisionnement</b></p>
+        <p>Pour réduire les risques liés à la nouvelle réglementation, Earthcraft Furnishings met en œuvre une stratégie de diversification de ses sources d'approvisionnement en bois.</p>
+        <p>Nous avons établi des partenariats solides avec une variété de fournisseurs certifiés, répartis dans différentes régions géographiques, ce qui nous permet de garantir un approvisionnement stable et responsable en bois écoresponsable. De plus, nous soutenons activement des initiatives de conservation forestière et de reboisement, contribuant ainsi à la préservation des écosystèmes forestiers dans le monde entier.</p>
+        <p><b>Investissement dans la conformité</b></p>
+        <p>Nous investissons continuellement dans des technologies de pointe pour renforcer notre conformité avec les réglementations environnementales en constante évolution.</p>
+        <p>Cela inclut l'adoption de systèmes de traçabilité avancés, de logiciels de gestion de la chaîne d'approvisionnement et de solutions de documentation numérique, garantissant une transparence totale dans nos opérations et une conformité rigoureuse avec les exigences réglementaires.</p>
+        <p><b>Communication transparente</b></p>
+        <p>Nous nous engageons à maintenir une communication ouverte et transparente avec nos partenaires tout au long du processus d'adaptation à la nouvelle réglementation.</p>
+        <p>Nous partagerons régulièrement des mises à jour sur les mesures que nous prenons pour assurer notre conformité, ainsi que sur les progrès réalisés dans nos efforts en matière de durabilité et de responsabilité environnementale.</p>
+        <p>Nous restons disponibles pour répondre à toutes les questions ou préoccupations de nos partenaires et sommes déterminés à travailler ensemble pour relever les défis futurs tout en continuant à promouvoir des pratiques durables et éthiques dans notre industrie.</p>
+    </div>
+
+    <div id="contact" class="tab">
+        <h2>Contact</h2>
+        <section id="contact">
+            <form>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom"><br>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+        <p>Adresse : 27 avenue Claude Vellefaux, 75010 Paris<br>
+        Numéro de téléphone : 01 40 71 25 49<br>
+        Adresse email : chahinaise.mesbahi@inseec-france.com</p>
+    </div>
+
+    <div id="trouver-magasin" class="tab">
+    <h2>Trouver un magasin</h2>
+    <!-- Contenu de l'onglet Trouver un magasin -->
+    <div id="map"></div> <!-- Inclure la div de la carte dans cet onglet -->
+    <script>
+        var map = L.map('map').setView([48.8566, 2.3522], 6);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    </script>
+</div>
+
+    <footer>
+        <p>&copy; 2024 EarthCraft Furnishings. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouver un magasin</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        .tab { display: none; } /* Cacher tous les contenus d'onglets par défaut */
+        #map { height: 400px; } /* Taille de la carte */
+    </style>
+</head>
+<body>
+    <!-- Map div -->
+    <div id="map"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#produits">Produits</a></li>
+            <li><a href="#trouver-magasin">Trouver un magasin</a></li> <!-- Modifier l'ID ici -->
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu des onglets -->
+    <div id="accueil" class="tab">
+        <h2>Accueil</h2>
+        <!-- Contenu de l'onglet Accueil -->
+    </div>
+
+    <div id="produits" class="tab">
+        <h2>Produits</h2>
+        <!-- Contenu de l'onglet Produits -->
+    </div>
+
+    <div id="trouver-magasin" class="tab">
+        <h2>Trouver un magasin</h2>
+        <!-- Contenu de l'onglet Trouver un magasin -->
+    </div>
+
+    <div id="a-propos" class="tab">
+        <h2>À Propos</h2>
+        <!-- Contenu de l'onglet À Propos -->
+    </div>
+
+    <div id="contact" class="tab">
+        <h2>Contact</h2>
+        <!-- Contenu de l'onglet Contact -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll("nav ul li a");
+            const tabContents = document.querySelectorAll(".tab");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function(event) {
+                    // Empêcher le comportement par défaut du lien
+                    event.preventDefault();
+
+                    // Récupérer l'ID de l'onglet correspondant au lien cliqué
+                    const tabId = this.getAttribute("href").substring(1);
+
+                    // Cacher tous les contenus d'onglets
+                    tabContents.forEach(content => {
+                        content.style.display = "none";
+                    });
+
+                    // Afficher le contenu de l'onglet correspondant
+                    document.getElementById(tabId).style.display = "block";
+
+                    // Si l'onglet correspond à "Trouver un magasin", afficher la carte
+                    if (tabId === "trouver-magasin") {
+                        document.getElementById("map").style.display = "block";
+                        // Initialiser la carte Leaflet
+                        var map = L.map('map').setView([48.8566, 2.3522], 6);
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+                    } else {
+                        // Sinon, masquer la carte
+                        document.getElementById("map").style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
